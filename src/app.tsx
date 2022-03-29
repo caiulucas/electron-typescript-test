@@ -1,8 +1,7 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as ReactDOM from "react-dom";
+import * as React from "react";
+import "reflect-metadata";
+import {database} from './database/database';
+import { Fetcher } from "./components/Fetcher";
 
-function render() {
-  ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById('root'));
-}
-
-render();
+ReactDOM.render(<Fetcher database={database} />, document.getElementById('root'));

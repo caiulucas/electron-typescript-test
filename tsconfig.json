@@ -10,9 +10,12 @@
     "baseUrl": ".",
     "outDir": "dist",
     "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "resolveJsonModule": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": ["node_modules/*"],
+      "react-native-sqlite-storage": ["src/dummy.ts"]
     }
   },
   "include": ["src/**/*"]
